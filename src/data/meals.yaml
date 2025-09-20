@@ -1,0 +1,71 @@
+# Human-readable meals data
+# Units allowed: lb, oz, cups, tbsp, tsp, cloves, slices, count, stalks
+# qty is per *batch* (one full recipe)
+- id: hot-creamy-chicken-pasta
+  name: Hot Creamy Chicken Pasta
+  servingsPerBatch: 4
+  ingredients:
+    - { name: Chicken Breast, unit: lb, qty: 1.0 }
+    - { name: Pasta, unit: oz, qty: 12.0 }
+    - { name: Olive Oil, unit: tbsp, qty: 1.0 }
+    - { name: Garlic, unit: cloves, qty: 3.0 }
+    - { name: Chicken Broth, unit: cups, qty: 1.0 }
+    - { name: Greek Yogurt, unit: cups, qty: 1.0 }
+    - { name: Parmesan, unit: cups, qty: 0.5 }
+    - { name: Spinach, unit: oz, qty: 2.0 }
+
+- id: chicken-pasta-salad
+  name: Chicken Pasta Salad
+  servingsPerBatch: 4
+  ingredients:
+    - { name: Chicken Breast, unit: lb, qty: 0.625 }
+    - { name: Pasta, unit: oz, qty: 12.0 }
+    - { name: Cherry Tomatoes, unit: oz, qty: 5.0 }
+    - { name: Cucumber, unit: oz, qty: 4.0 }
+    - { name: Carrots, unit: oz, qty: 2.0 }
+    - { name: Greek Yogurt, unit: cups, qty: 0.5 }
+    - { name: Olive Oil, unit: tbsp, qty: 2.0 }
+    - { name: Dijon Mustard, unit: tbsp, qty: 1.0 }
+
+- id: korean-ground-beef-bowls
+  name: Korean Ground Beef Bowls
+  servingsPerBatch: 4
+  ingredients:
+    - { name: Ground Beef/Turkey, unit: lb, qty: 1.0 }
+    - { name: Rice, cooked, unit: oz, qty: 13.4 }
+    - { name: Broccoli, unit: oz, qty: 9.5 }
+    - { name: Soy Sauce, unit: tbsp, qty: 3.0 }
+    - { name: Brown Sugar/Honey, unit: tbsp, qty: 2.0 }
+    - { name: Sesame Oil, unit: tbsp, qty: 1.0 }
+    - { name: Garlic, unit: cloves, qty: 2.0 }
+    - { name: Ginger, unit: tsp, qty: 1.0 }
+
+- id: steak-and-potatoes
+  name: Steak and Potatoes
+  servingsPerBatch: 4
+  ingredients:
+    - { name: Steak, unit: lb, qty: 1.5 }
+    - { name: Potatoes, unit: oz, qty: 24.0 }
+    - { name: Asparagus, unit: oz, qty: 16.0 }
+    - { name: Olive Oil, unit: tbsp, qty: 2.0 }
+
+- id: salmon-and-asparagus-with-rice
+  name: Salmon and Asparagus with Rice
+  servingsPerBatch: 4
+  ingredients:
+    - { name: Salmon, unit: lb, qty: 1.5 }
+    - { name: Asparagus, unit: oz, qty: 16.0 }
+    - { name: Rice, cooked, unit: oz, qty: 13.4 }
+    - { name: Olive Oil, unit: tbsp, qty: 2.0 }
+    - { name: Lemon, unit: count, qty: 1.0 }
+
+- id: tuna-salad-sandwich
+  name: Tuna Salad Sandwich
+  servingsPerBatch: 2
+  ingredients:
+    - { name: Tuna, unit: lb, qty: 0.5 }
+    - { name: Greek Yogurt, unit: cups, qty: 0.25 }
+    - { name: Dijon Mustard, unit: tbsp, qty: 0.333 }
+    - { name: Celery, unit: stalks, qty: 1.0 }
+    - { name: Eggs, unit: count, qty: 1.0 }
+    - { name: Bread, unit: slices, qty: 4.0 }
