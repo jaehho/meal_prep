@@ -98,13 +98,13 @@ export default function App() {
                 return (
                   <div className="row" key={meal.id}>
                     <div>
-                      <div style={{fontWeight:600}}>{meal.name}</div>
+                      <div className="font-semibold">{meal.name}</div>
                       <div className="chips">
                         <Pill>{meal.servingsPerBatch} servings / batch</Pill>
                         <Pill>{meal.ingredients.length} ingredients</Pill>
                       </div>
                     </div>
-                    <div style={{display:'flex', alignItems:'center', gap:8}}>
+                    <div className="flex items-center gap-8">
                       <span className="muted">Batches</span>
                       <NumberStepper value={batches} setValue={(v) => setBatches(meal.id, v)} min={0} max={50} />
                     </div>
@@ -114,7 +114,7 @@ export default function App() {
             </div>
           </div>
 
-          <div className="muted" style={{marginTop:8}}>
+          <div className="muted mt-8">
             Tip: a <b>batch</b> equals one full recipe (usually 4 servings). Increase batches to cook extra for the week.
           </div>
         </section>
@@ -122,7 +122,7 @@ export default function App() {
         <section>
           <div className="header">
             <h2 className="subtitle">Grocery List</h2>
-            <div style={{display:'flex', gap:8}}>
+            <div className="flex gap-8">
               <button className="btn btn-outline" onClick={() => navigator.clipboard.writeText(csv)} title="Copy tidy grocery list as CSV to clipboard">Copy CSV</button>
               <button className="btn btn-primary" onClick={downloadCSV} title="Download grocery_list.csv">Download CSV</button>
             </div>
@@ -131,7 +131,7 @@ export default function App() {
           <div className="spacer" />
 
           <div className="card">
-            <div className="card-body" style={{padding:0}}>
+            <div className="card-body p-0">
               <table>
                 <thead>
                   <tr>
@@ -142,7 +142,7 @@ export default function App() {
                 </thead>
                 <tbody>
                   {groceryList.length === 0 ? (
-                    <tr><td className="muted" colSpan={3} style={{padding:'16px'}}>No meals selected yet. Add batches on the left to build a list.</td></tr>
+                    <tr><td className="muted p-16" colSpan={3}>No meals selected yet. Add batches on the left to build a list.</td></tr>
                   ) : (
                     groceryList.map((item) => (
                       <tr key={`${item.name}-${item.unit}`}>
@@ -157,8 +157,8 @@ export default function App() {
             </div>
           </div>
 
-          <div className="card" style={{marginTop:12}}>
-            <div className="card-body" style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
+          <div className="card mt-12">
+            <div className="card-body flex justify-between items-center">
               <div className="muted">
                 <b>Meals selected:</b> {activeMeals.length} ・ <b>Total servings:</b> {totalServings}
               </div>

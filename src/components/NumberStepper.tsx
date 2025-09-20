@@ -2,14 +2,21 @@ import React from 'react'
 
 type Props = {
   value: number
-  setValue: (v: number) => void
+  setValue: (_value: number) => void
   min?: number
   max?: number
   disabled?: boolean
   label?: string
 }
 
-export default function NumberStepper({ value, setValue, min = 0, max = 99, disabled, label }: Props) {
+export default function NumberStepper({
+  value,
+  setValue,
+  min = 0,
+  max = 99,
+  disabled,
+  label,
+}: Props) {
   return (
     <div className="stepper" aria-label={label || 'number stepper'}>
       <button onClick={() => setValue(Math.max(min, value - 1))} disabled={disabled || value <= min} aria-label="decrease">−</button>

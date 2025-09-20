@@ -3,3 +3,9 @@ dist
 .DS_Store
 .vite
 *.log
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Generated type declarations
+vite.config.d.ts
